@@ -6,6 +6,7 @@ except ImportError:
     from smbus import SMBus
 import psutil
 import os
+import asyncio
 import time
 
 
@@ -22,17 +23,17 @@ class Sensor():
         # pause for a moment to allow the pms5003 to settle
         time.sleep(1.0)
 
-    def readSensor(self):
-        samples = 15
-        avg = [0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0]
-        telemetry = None
-
+    async def readSensor(self):
         try:
+            samples = 15
+            avg = [0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0]
+            telemetry = None
+
             for i in range(samples):
                 readings = self.pms5003.read()
                 for j in range(14):
                     avg[j] += readings.data[j]
-                time.sleep(1)
+                await asyncio.sleep(1)
 
             telemetry = {
                 # PM1.0 ug/m3 (ultrafine particles)
@@ -50,5 +51,6 @@ class Sensor():
         except ReadTimeoutError:
             self.pms5003 = PMS5003()
             print('Timeout reading PMS5003 Sensor')
+            telemetry = None
 
         return telemetry

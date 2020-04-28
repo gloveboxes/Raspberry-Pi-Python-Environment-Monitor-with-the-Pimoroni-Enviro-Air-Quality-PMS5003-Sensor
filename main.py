@@ -1,4 +1,3 @@
-import time
 import json
 import asyncio
 from azure.iot.device.aio import IoTHubDeviceClient
@@ -29,26 +28,23 @@ async def main():
 
     asyncio.create_task(message_listener(device_client))
 
-    try:
-        while True:
-            try:
-                telemetry = sensor.readSensor()
-                if telemetry is not None:
+    while True:
+        try:
+            telemetry = await sensor.readSensor()
+            if telemetry is not None:
 
-                    print(telemetry)
-                    data = json.dumps(telemetry)
+                print(telemetry)
+                data = json.dumps(telemetry)
 
-                    await device_client.send_message(data)
+                await device_client.send_message(data)
 
-                    time.sleep(5)
+                await asyncio.sleep(60)
 
-            except:
-                print("Unexpected error:", sys.exc_info()[0])
-
-    except KeyboardInterrupt:
-        pass
+        except:
+            print("Unexpected error:", sys.exc_info()[0])
 
     await device_client.disconnect()
+
 
 if __name__ == "__main__":
     asyncio.run(main())
