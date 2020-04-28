@@ -22,7 +22,6 @@ class Sensor():
         # pause for a moment to allow the pms5003 to settle
         time.sleep(1.0)
 
-
     def readSensor(self):
         samples = 15
         avg = [0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0]
@@ -42,13 +41,12 @@ class Sensor():
                 "PM2-5": int(avg[1]/samples),
                 # PM10 ug/m3  (dust, pollen, mould spores)
                 "PM10": int(avg[2]/samples),
-                "Temperature" : round(self.bme280.get_temperature(), 1),
+                "Temperature": round(self.bme280.get_temperature(), 1),
                 "Pressure": round(self.bme280.get_pressure(), 1),
-                "Humidity" : round(self.bme280.get_humidity(), 1),
+                "Humidity": round(self.bme280.get_humidity(), 1),
                 "Mem": self.py.memory_info()[0]
             }
 
-        
         except ReadTimeoutError:
             self.pms5003 = PMS5003()
             print('Timeout reading PMS5003 Sensor')

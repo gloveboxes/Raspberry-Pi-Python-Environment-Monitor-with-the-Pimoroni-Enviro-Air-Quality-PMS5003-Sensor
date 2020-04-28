@@ -6,9 +6,11 @@ import sys
 from device_provisioning_service import Device
 from sensor import Sensor
 
+
 async def main():
 
-    dps = Device("0ne0002EE6D", "RPiEnviroPlus", "VIfFoVJz8xCmqr/pPGpW3ofCAFl53vA16MNtIXPsLM0=")
+    dps = Device("0ne0002EE6D", "RPiEnviroPlus",
+                 "VIfFoVJz8xCmqr/pPGpW3ofCAFl53vA16MNtIXPsLM0=")
 
     conn_str = await dps.connection_string
 
@@ -16,7 +18,7 @@ async def main():
     await device_client.connect()
 
     sensor = Sensor()
-    
+
     async def message_listener(device_client):
         while True:
             message = await device_client.receive_message()  # blocking call
