@@ -1,0 +1,6 @@
+ptvsd
+azure-iot-device
+psutil
+enviroplus
+RPi.GPIO
+smbus2

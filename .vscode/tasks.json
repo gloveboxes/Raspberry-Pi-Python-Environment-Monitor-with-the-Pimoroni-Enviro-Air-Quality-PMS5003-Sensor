@@ -1,0 +1,47 @@
+{
+    // See https://go.microsoft.com/fwlink/?LinkId=733558
+    // for the documentation about the tasks.json format
+    "version": "2.0.0",
+    "tasks": [
+        {
+            "label": "start-app",
+            "type": "shell",
+            "command": "sh",
+            "args": [
+                "-c",
+                "\" docker exec -i enviroplus python3 /app/main.py &  \"",
+                ";",
+                "sh",
+                "-c",
+                "\" docker exec -i  enviroplus sh -c 'until pids=$(pidof python3) ; do sleep 1; done'  \""
+            ],
+        },
+        {
+            "label": "stop-app",
+            "type": "shell",
+            "command": "sh",
+            "args": [
+                "-c",
+                "\" docker exec -i enviroplus killall python3  \""
+            ]
+        },
+        {
+            "label": "start-container",
+            "type": "shell",
+            "command": "sh",
+            "args": [
+                "-c",
+                "\" docker run -i --privileged -p 5678:5678 --rm  -v $PWD:/app   --name enviroplus --env-file envfile.env  environment:latest sh  \""
+            ]
+        },
+        {
+            "label": "stop-container",
+            "type": "shell",
+            "command": "sh",
+            "args": [
+                "-c",
+                "\" docker stop enviroplus \""
+            ]
+        }
+    ]
+}

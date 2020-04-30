@@ -4,9 +4,22 @@ from azure.iot.device.aio import IoTHubDeviceClient
 import sys
 from device_provisioning_service import Device
 from sensor import Sensor
+import ptvsd
+import os
+
+ptvsd.enable_attach(address=('0.0.0.0', 5678))
 
 
 async def main():
+    scopeID = None
+    deviceId = None
+    key = None
+
+    scopeID = os.getenv('SCOPE_ID')
+    deviceId = os.getenv('DEVICE_ID')
+    key = os.getenv('DEVICE_KEY')
+
+
 
     dps = Device("0ne0002EE6D", "RPiEnviroPlus",
                  "VIfFoVJz8xCmqr/pPGpW3ofCAFl53vA16MNtIXPsLM0=")
@@ -38,7 +51,7 @@ async def main():
 
                 await device_client.send_message(data)
 
-                await asyncio.sleep(60)
+                await asyncio.sleep(5)
 
         except:
             print("Unexpected error:", sys.exc_info()[0])
