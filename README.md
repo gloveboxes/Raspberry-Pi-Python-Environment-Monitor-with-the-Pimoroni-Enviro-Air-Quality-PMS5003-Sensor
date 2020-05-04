@@ -47,3 +47,17 @@ sudo ./install.sh
 
 
 
+## Configure Azure IoT Central
+
+Import capability model
+
+
+## Configure Python App for IoT Central
+
+
+```text
+SCOPE_ID={IoT Central ID Scope}
+DEVICE_ID={your device id}
+DEVICE_KEY={your device key}
+````
+
