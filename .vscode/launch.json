@@ -9,8 +9,8 @@
             "type": "python",
             "request": "attach",
             "port": 5678,
-            "preLaunchTask": "start-app",
-            "postDebugTask": "stop-app",
+            // "preLaunchTask": "start-app",
+            // "postDebugTask": "stop-app",
             "host": "localhost",
             "pathMappings": [
                 {
