@@ -21,13 +21,18 @@ pip3 install ptvsd azure-iot-device psutil enviroplus RPi.GPIO pylint autopep8
 
 ## Install the following Visual Studio Code Extensions on the Raspberry Pi
 
+Ensure when you are installing the Python and Docker extensions you are installing into SSH. The following is an example of adding the Python extension into the SSH session.
+
+![](resources/vs-code-install-python.png)
+
+Install the following two extensions.
+
 1. [Python extension for Visual Studio Code](https://marketplace.visualstudio.com/items?itemName=ms-python.python)
-
-    * Ensure you install Python extension into SSH.
-
-        ![](resources/vs-code-install-python.png)
-
 2. [Docker for Visual Studio Code](https://marketplace.visualstudio.com/items?itemName=ms-azuretools.vscode-docker)
+
+
+
+
 
 
    
