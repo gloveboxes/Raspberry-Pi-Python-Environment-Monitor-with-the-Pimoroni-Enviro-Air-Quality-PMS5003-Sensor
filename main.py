@@ -8,6 +8,7 @@ import ptvsd
 import os
 
 ptvsd.enable_attach(address=('0.0.0.0', 5678))
+# ptvsd.wait_for_attach()
 
 
 async def main():
@@ -19,10 +20,10 @@ async def main():
     deviceId = os.getenv('DEVICE_ID')
     key = os.getenv('DEVICE_KEY')
 
+    if scopeID is None or deviceId is None or key is None:
+        sys.exit(1)
 
-
-    dps = Device("0ne0002EE6D", "RPiEnviroPlus",
-                 "VIfFoVJz8xCmqr/pPGpW3ofCAFl53vA16MNtIXPsLM0=")
+    dps = Device(scopeID, deviceId, key)
 
     conn_str = await dps.connection_string
 

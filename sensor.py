@@ -16,6 +16,8 @@ class Sensor():
         self.pms5003 = PMS5003()
         self.bus = SMBus(1)
         self.bme280 = BME280(i2c_dev=self.bus)
+        self.bme280.get_pressure() # prime bme sensor as first reading not accurate
+        self.msgId = 0
 
         self.pid = os.getpid()
         self.py = psutil.Process(self.pid)
@@ -35,17 +37,20 @@ class Sensor():
                     avg[j] += readings.data[j]
                 await asyncio.sleep(1)
 
+            self.msgId += 1
+
             telemetry = {
                 # PM1.0 ug/m3 (ultrafine particles)
-                "PM1-0": int(avg[0]/samples),
+                "pm1": int(avg[0]/samples),
                 # PM2.5 ug/m3 (combustion particles, organic compounds, metals)
-                "PM2-5": int(avg[1]/samples),
+                "pm25": int(avg[1]/samples),
                 # PM10 ug/m3  (dust, pollen, mould spores)
-                "PM10": int(avg[2]/samples),
-                "Temperature": round(self.bme280.get_temperature(), 1),
-                "Pressure": round(self.bme280.get_pressure(), 1),
-                "Humidity": round(self.bme280.get_humidity(), 1),
-                "Mem": self.py.memory_info()[0]
+                "pm10": int(avg[2]/samples),
+                "temperature": round(self.bme280.get_temperature(), 1),
+                "pressure": round(self.bme280.get_pressure(), 1),
+                "humidity": round(self.bme280.get_humidity(), 1),
+                "mem": self.py.memory_info()[0],
+                "msgId": self.msgId
             }
 
         except ReadTimeoutError:
