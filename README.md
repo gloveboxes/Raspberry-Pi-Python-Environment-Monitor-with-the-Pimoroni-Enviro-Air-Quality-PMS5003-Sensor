@@ -9,25 +9,25 @@
 
 ## Install the following software components on to your Raspberry Pi
 
-    ```bash
-    sudo apt install git python3-pip
-    ```
+```bash
+sudo apt install git python3-pip
+```
 
 ## Install the following Python Packages
 
-    ```bash
-    pip3 install ptvsd azure-iot-device psutil enviroplus RPi.GPIO pylint autopep8
-    ```
+```bash
+pip3 install ptvsd azure-iot-device psutil enviroplus RPi.GPIO pylint autopep8
+```
 
 ## Install the following Visual Studio Code Extensions on the Raspberry Pi
 
-    1. [Python extension for Visual Studio Code](https://marketplace.visualstudio.com/items?itemName=ms-python.python)
+1. [Python extension for Visual Studio Code](https://marketplace.visualstudio.com/items?itemName=ms-python.python)
 
-        * Ensure you install Python extension into SSH.
+    * Ensure you install Python extension into SSH.
 
-            ![](resources/vs-code-install-python.png)
+        ![](resources/vs-code-install-python.png)
 
-    2. [Docker for Visual Studio Code](https://marketplace.visualstudio.com/items?itemName=ms-azuretools.vscode-docker)
+2. [Docker for Visual Studio Code](https://marketplace.visualstudio.com/items?itemName=ms-azuretools.vscode-docker)
 
 
    
