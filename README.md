@@ -30,12 +30,6 @@ Install the following two extensions.
 1. [Python extension for Visual Studio Code](https://marketplace.visualstudio.com/items?itemName=ms-python.python)
 2. [Docker for Visual Studio Code](https://marketplace.visualstudio.com/items?itemName=ms-azuretools.vscode-docker)
 
-
-
-
-
-
-   
 ## Install Pimoroni Enviro+ Software
 
 [Getting Started with Enviro+](https://learn.pimoroni.com/tutorial/sandyj/getting-started-with-enviro-plus)
@@ -50,15 +44,11 @@ sudo ./install.sh
 
 ## Clone the Azure IoT Environment Particle Matter Sensor
 
-
-
 ## Configure Azure IoT Central
 
 Import capability model
 
-
 ## Configure Python App for IoT Central
-
 
 ```text
 SCOPE_ID={IoT Central ID Scope}
