@@ -1,5 +1,21 @@
 # Tutorial: Azure IoT Central and Particulate Matter Monitoring  
 
+## Background
+
+Born of necessity, this project tracks the air quality over Sydney during the height of the Australian bush fires. I wanted to gauge when it was safe to go outside, or when it was better to close up the house and stay in for the day.
+
+| Sydney, Dec 2019 | Particulate matter readings|
+| ---- | ---|
+| ![](resources\sydney-height-of-bush-fires.jpg) | ![](resources/pm-readings-dec-10-2019.png)
+
+This is Sydney on a clear day, alas, during the COVID-19 Pandemic lock down.
+
+![](resources/sydney-height-of-pandemic.jpg)
+
+
+
+---
+
 ## Introduction
 
 In this hands-on lab, you will learn how to create and debug a Python application on a Raspberry Pi with [Visual Studio Code](https://code.visualstudio.com/?WT.mc_id=pycon-blog-dglover) and the [Remote SSH](https://marketplace.visualstudio.com/items?itemName=ms-vscode-remote.remote-ssh&WT.mc_id=pycon-blog-dglover) extension. The app requires the [Pimoroni Enviro+ pHAT](https://learn.pimoroni.com/tutorial/sandyj/getting-started-with-enviro-plus), and reads data from the PMS5003 particulate matter (PM) and BME280 sensors and streams the data to [Azure IoT Central](https://azure.microsoft.com/services/iot-central/).
@@ -146,8 +162,7 @@ You will be prompted for:
 2. Copy and paste the following command, and press **ENTER**
 
     ```bash
-    read -p "Enter the Raspberry Pi Address: " pyurl && \
-    curl ftp://$pyurl/scripts/ssh-setup.sh | bash
+    curl https://raw.githubusercontent.com/gloveboxes/Raspberry-Pi-Python-Environment-Monitor-with-the-Pimoroni-Enviro-Air-Quality-PMS5003-Sensor/master/scripts/ssh-setup.sh | bash
     ```
 
 ---
