@@ -4,10 +4,10 @@ from azure.iot.device.aio import IoTHubDeviceClient
 import sys
 from device_provisioning_service import Device
 from sensor import Sensor
-import ptvsd
+# import ptvsd
 import os
 
-ptvsd.enable_attach(address=('0.0.0.0', 5678))
+# ptvsd.enable_attach(address=('0.0.0.0', 5678))
 # ptvsd.wait_for_attach()
 
 
