@@ -2,16 +2,15 @@
 
 ## Background
 
-Born of necessity, this project tracks the air quality over Sydney during the height of the Australian bush fires. I wanted to gauge when it was safe to go outside, or when it was better to close up the house and stay in for the day.
+Born of necessity, this project tracks the air quality over Sydney during the height of the Australian bush fires. I wanted to gauge when it was safe to go outside, or when it was better to close up the apartment and stay in for the day.
 
 | Sydney, Dec 2019 | Particulate matter readings|
 | ---- | ---|
-| ![](resources\sydney-height-of-bush-fires.jpg) | ![](resources/pm-readings-dec-10-2019.png)
+| ![](resources\sydney-height-of-bush-fires.jpg) | Readings for PM 2.5 and PM 10 approx 1000. Healthy levels should be between 0 ~ 10. ![](resources/pm-readings-dec-10-2019.png) |
 
-This is Sydney on a clear day, alas, during the COVID-19 Pandemic lock down.
+This is Sydney on a clear day, taken in May 2020, alas, during the COVID-19 Pandemic lock down.
 
 ![](resources/sydney-height-of-pandemic.jpg)
-
 
 
 ---
