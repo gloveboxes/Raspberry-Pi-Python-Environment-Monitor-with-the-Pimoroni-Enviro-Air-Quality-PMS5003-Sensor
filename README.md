@@ -8,7 +8,7 @@ Born of necessity, this project tracks the air quality over Sydney during the he
 | ---- | ---|
 | ![](resources\sydney-height-of-bush-fires.jpg) | Readings for PM 2.5 and PM 10 approx 1000. Healthy levels should be between 0 ~ 10. ![](resources/pm-readings-dec-10-2019.png) |
 
-This is Sydney on a clear day, taken in May 2020, alas, during the COVID-19 Pandemic lock down.
+This is Sydney on a clear day, the photo was taken in May 2020, alas, during the COVID-19 Pandemic lock down. On the upside there is close to zero air polution.
 
 ![](resources/sydney-height-of-pandemic.jpg)
 
