@@ -8,7 +8,7 @@ Born of necessity, this project tracks the air quality over Sydney during the he
 | ---- | ---|
 | ![](resources\sydney-height-of-bush-fires.jpg) | Readings for PM 2.5 and PM 10 approx 1000. Healthy levels should be between 0 ~ 10. ![](resources/pm-readings-dec-10-2019.png) |
 
-This is Sydney on a clear day, the photo was taken in May 2020, alas, during the COVID-19 Pandemic lock down. On the upside there is close to zero air polution.
+This is Sydney on a clear day, the photo was taken in May 2020, alas, during the COVID-19 pandemic lock down. On the upside, there is close to zero air pollution.
 
 ![](resources/sydney-height-of-pandemic.jpg)
 
@@ -168,7 +168,7 @@ You will be prompted for:
 
 ## Set up Visual Studio Code on your computer
 
-This hands-on lab uses Visual Studio Code. Visual Studio Code is a code editor and is one of the most popular **Open Source** projects on [GitHub](https://github.com/microsoft/vscode). It runs on Linux, macOS, and Windows.
+This hands-on lab requires Visual Studio Code. Visual Studio Code is a code editor and is one of the most popular **Open Source** projects on [GitHub](https://github.com/microsoft/vscode). It runs on Linux, macOS, and Windows.
 
 1. Install Visual Studio Code from [here](https://code.visualstudio.com/). 
 
@@ -203,17 +203,21 @@ This hands-on lab uses Visual Studio Code. Visual Studio Code is a code editor a
 
     ![](resources/vs-code-install-python.png)
 
+![](resources/computer-set-up-completed.png)
+
+---
+
 ## Install Pimoroni Enviro+ Software on the Raspberry Pi
 
 [Getting Started with Enviro+](https://learn.pimoroni.com/tutorial/sandyj/getting-started-with-enviro-plus)
 
 
 
-## Clone the Azure IoT Environment Particle Matter Sensor
-
 ## Configure Azure IoT Central
 
 Import capability model
+
+![](resources/azure-iot-central-set-up-completed.png)
 
 ## Configure Python App for IoT Central
 
