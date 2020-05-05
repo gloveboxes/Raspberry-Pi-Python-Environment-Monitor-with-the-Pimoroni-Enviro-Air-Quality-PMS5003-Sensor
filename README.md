@@ -34,7 +34,15 @@ In this hands-on lab, you will learn how to create and debug a Python applicatio
 2. [Pimoroni Enviro+ pHAT](https://learn.pimoroni.com/tutorial/sandyj/getting-started-with-enviro-plus)
 3. PMS5003 Particulate Matter Sensor with Cable available from [Pimoroni](https://shop.pimoroni.com/products/pms5003-particulate-matter-sensor-with-cable) and eBay.
 
+This lab depends on Visual Studio Code and Remote SSH development. Remote SSH development is supported on Raspberry Pis built on ARMv7 chips or better. The Raspberry Pi Zero is built on ARMv6 architecture. It can run the solution, but it does not support Remote SSH development.
+
+![](resources/azure-iot-central-air-quality-monitor.png)
+
 ---
+
+## Acknowledgements
+
+This tutorial build on the [Azure IoT Python SDK 2](https://github.com/Azure/azure-iot-sdk-python/tree/master/azure-iot-device/samples) samples.
 
 ## Lab set up
 
@@ -207,19 +215,101 @@ This hands-on lab requires Visual Studio Code. Visual Studio Code is a code edit
 
 ---
 
-## Install Pimoroni Enviro+ Software on the Raspberry Pi
-
-[Getting Started with Enviro+](https://learn.pimoroni.com/tutorial/sandyj/getting-started-with-enviro-plus)
-
-
-
 ## Configure Azure IoT Central
 
-Import capability model
+## Creating an Azure IoT Central Application
+
+### What is Azure IoT Central
+
+Easily connect, monitor and manage your Internet of Things (IoT) assets at scale. [Azure IoT Central](https://azure.microsoft.com/en-in/services/iot-central/?WT.mc_id=pycon-blog-dglover) is a hosted, extensible software as a service (SaaS) platform that simplifies setup of your IoT solution and helps reduce the burden and costs of IoT management, operations and development. Provide customers superior products and service while expanding your business possibilities.
+
+![Azure IoT Central](resources/azure-iot-central.jpg)
+
+We are going to create an Azure IoT Central application, then a device, and finally a device **connection string** needed for the application that will run in the Docker container.
+
+![](resources/azure_iot_central.png)
+
+## Create a New IoT Central Application
+
+1. Open the [Azure IoT Central](https://azure.microsoft.com/en-au/services/iot-central/?WT.mc_id=pycon-blog-dglover) in a new browser tab, then click **Getting started**.
+
+2. Next, you will need to sign with your **Microsoft** Personal, or Work, or School account. If you do not have a Microsoft account, then you can create one for free using the **Create one!** link.
+
+    ![iot central](resources/iot-central-login.png)
+
+3. Create a new Azure IoT Central application, select **New Application**. This takes you to the **Create Application** page.
+
+4. Select **Build as app**
+
+    ![](resources/iot-central-build-first-app.png)
+
+5. Select **Custom app**
+
+    ![](resources/iot-central-custom-app.png)
+
+### Create a **New application**
+
+Specify **Application name**, **URL**, enable **7 day free trial**, and complete the registration form. Then click **Create**.
+
+![](resources/iot-central-new-application.png)
+
+1. Add new Device Template
+
+    Click **Device templates**
+
+    ![](resources/iot-central-device-template.png)
+
+2. Select **IoT device** template type
+
+    ![](resources/iot-central-new-iot-device-template.png)
+
+3. Create an **IoT Device** Template
+
+    1. Select **IoT device**, 
+    2. Click **Next:Customise**, 
+    3. Click **Next: Review**, 
+    4. Click **Create**.
+    5. Name your template **Air Quality Monitor**, and press **Enter**
+
+#### Import a Capability Model
+
+1. Add an Interface
+
+    1. Click **Import capability model**
+    2. Navigate to the folder you cloned the solution into.
+    3. Select **Air Quality Monitor.json** and open
+
+2. Create a view
+    1. Click **Views**
+        ![](resources/iot-central-create-a-view.png)
+    2. Select **Visualizing the device**
+    3. Select the Particular Matter telemetry
+        ![](resources/iot-central-add-tile-particular-matter.png)
+    4. Click **Add Tile**
+    5. Select Humidity, Pressure, and Temperature telemetry.
+        ![](resources/iot-central-add-tile-bme280.png)
+    6. Click **Add Tile**
+    7. Drag the Humidity, Pressure, Temperature tile so that it lines up with the Particular Matter tile.
+        ![](resources/iot-central-tiles-align.png)
+    8. Save the view
+        ![](resources/iot-central-view-save.png)
+        <br/>
+
+3. Click **Publish** to publish the template
+    <br/>
+    ![](resources/iot-central-template-publish.png)
+
+---
+
+## Create a device
+
+
 
 ![](resources/azure-iot-central-set-up-completed.png)
 
 ## Configure Python App for IoT Central
+
+
 
 ```text
 SCOPE_ID={IoT Central ID Scope}
