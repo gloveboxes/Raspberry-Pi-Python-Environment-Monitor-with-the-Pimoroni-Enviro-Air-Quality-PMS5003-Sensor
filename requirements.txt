@@ -4,4 +4,3 @@ psutil
 enviroplus
 RPi.GPIO
 smbus2
-python-dotenv
