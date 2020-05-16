@@ -16,8 +16,10 @@ class Sensor():
         self.pms5003 = PMS5003()
         self.bus = SMBus(1)
         self.bme280 = BME280(i2c_dev=self.bus)
-        self.bme280.get_pressure() # prime bme sensor as first reading not accurate
+        self.bme280.get_pressure()  # prime bme sensor as first reading not accurate
         self.msgId = 0
+        self.nextRead = None
+        self.avg = [0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0]
 
         self.pid = os.getpid()
         self.py = psutil.Process(self.pid)
@@ -28,24 +30,28 @@ class Sensor():
     async def readSensor(self):
         try:
             samples = 15
-            avg = [0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0]
             telemetry = None
 
-            for i in range(samples):
-                readings = self.pms5003.read()
-                for j in range(14):
-                    avg[j] += readings.data[j]
-                await asyncio.sleep(1)
+            if self.nextRead is None or self.nextRead < time.time():
+                self.avg = [0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0]
+                # don't read pms5003 sensor for another 10 minutes = 10 minutes time 60 seconds
+                self.nextRead = time.time() + (10 * 60)
+
+                for i in range(samples):
+                    readings = self.pms5003.read()
+                    for j in range(14):
+                        self.avg[j] += readings.data[j]
+                    await asyncio.sleep(1)
 
             self.msgId += 1
 
             telemetry = {
                 # PM1.0 ug/m3 (ultrafine particles)
-                "pm1": int(avg[0]/samples),
+                "pm1": int(self.avg[0]/samples),
                 # PM2.5 ug/m3 (combustion particles, organic compounds, metals)
-                "pm25": int(avg[1]/samples),
+                "pm25": int(self.avg[1]/samples),
                 # PM10 ug/m3  (dust, pollen, mould spores)
-                "pm10": int(avg[2]/samples),
+                "pm10": int(self.avg[2]/samples),
                 "temperature": round(self.bme280.get_temperature(), 1),
                 "pressure": round(self.bme280.get_pressure(), 1),
                 "humidity": round(self.bme280.get_humidity(), 1),

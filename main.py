@@ -52,7 +52,7 @@ async def main():
 
                 await device_client.send_message(data)
 
-                await asyncio.sleep(5)
+                await asyncio.sleep(10)
 
         except:
             print("Unexpected error:", sys.exc_info()[0])

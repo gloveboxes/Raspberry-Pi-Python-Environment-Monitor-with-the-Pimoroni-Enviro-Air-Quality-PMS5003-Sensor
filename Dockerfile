@@ -20,4 +20,8 @@ CMD ["python3","main.py"]
 
 # docker run -it --privileged -p 5678:5678 --rm  -v $PWD:/app   --name enviroplus --env-file .env  environment:latest
 
+# docker run -it --privileged -p 5678:5678 --rm  -v $PWD:/app   --name enviroplus --env-file .env  glovebox.azurecr.io/environment:latest
+
 # docker run -d --privileged -p 5678:5678 --rm  --name enviroplus --env-file .env  environment:latest
+
+
