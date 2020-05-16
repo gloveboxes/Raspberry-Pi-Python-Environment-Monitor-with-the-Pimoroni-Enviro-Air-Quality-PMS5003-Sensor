@@ -6,8 +6,8 @@ from device_provisioning_service import Device
 from sensor import Sensor
 import os
 
-# import ptvsd
-# ptvsd.enable_attach(address=('0.0.0.0', 5678))
+import ptvsd
+ptvsd.enable_attach(address=('0.0.0.0', 5678))
 # ptvsd.wait_for_attach()
 
 

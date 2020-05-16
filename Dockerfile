@@ -10,7 +10,7 @@ RUN export PIP_DEFAULT_TIMEOUT=100 && \
 
 
 # Add the application
-COPY *.py /
+COPY ./app/*.py /
 
 # Disable output buffering 
 ENV PYTHONUNBUFFERED=1
