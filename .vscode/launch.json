@@ -23,7 +23,7 @@
             "name": "Python: Current File",
             "type": "python",
             "request": "launch",
-            "program": "main.py",
+            "program": "./app/main.py",
             "console": "integratedTerminal",
             "envFile": "${workspaceFolder}/.env"
         }
