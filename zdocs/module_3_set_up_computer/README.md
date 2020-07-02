@@ -8,7 +8,7 @@
 * Module 2: [Set up your Raspberry Pi](../module_2_set_up_raspberry_pi/README.md)
 * Module 3: [Set up your development environment](../module_3_set_up_computer/README.md)
 * Module 4: [Run the solution](../module_4_building_the_solution/README.md)
-
+* Module 5: [Dockerize the Air Quality Monitor solution](../module_5_docker/README.md)
 * [Home](../../README.md)
 
 ---
@@ -113,6 +113,6 @@ Now that you have started the Visual Studio Code Remote SSH Development you need
 
 ---
 
-**[NEXT](../module_4_create_azure_resources/README.md)**
+**[NEXT](../module_4_building_the_solution/README.md)**
 
 ---

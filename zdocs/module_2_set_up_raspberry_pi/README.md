@@ -8,7 +8,7 @@
 * Module 2: [Set up your Raspberry Pi](../module_2_set_up_raspberry_pi/README.md)
 * Module 3: [Set up your development environment](../module_3_set_up_computer/README.md)
 * Module 4: [Run the solution](../module_4_building_the_solution/README.md)
-
+* Module 5: [Dockerize the Air Quality Monitor solution](../module_5_docker/README.md)
 * [Home](../../README.md)
 
 ---
@@ -49,7 +49,7 @@ gpu_freq=700
 
 ### Create the Raspberry Pi OS Image
 
-I recommend using Raspberry Pi OS Lite as it takes less resources than the full Raspberry Pi Desktop version. If you've not set up a Raspberry Pi before then this is a great guide. "[Setting up a Headless Pi](https://learn.pimoroni.com/tutorial/sandyj/setting-up-a-headless-pi)". Be sure to use the WiFi network as your development computer.
+I recommend using Raspberry Pi OS Lite as it takes fewer resources than the full Raspberry Pi Desktop version. If you've not set up a Raspberry Pi before then this is a great guide. "[Setting up a Headless Pi](https://learn.pimoroni.com/tutorial/sandyj/setting-up-a-headless-pi)". Be sure to use the WiFi network as your development computer.
 
 
 

@@ -8,7 +8,7 @@
 * Module 2: [Set up your Raspberry Pi](../module_2_set_up_raspberry_pi/README.md)
 * Module 3: [Set up your development environment](../module_3_set_up_computer/README.md)
 * Module 4: [Run the solution](../module_4_building_the_solution/README.md)
-
+* Module 5: [Dockerize the Air Quality Monitor solution](../module_5_docker/README.md)
 * [Home](../../README.md)
 
 ---
@@ -152,6 +152,6 @@ For more information on device templates, review the [Define a new IoT device ty
 
 ---
 
-**[NEXT](../module_2_install_azure_iot_edge/README.md)**
+**[NEXT](../module_2_set_up_raspberry_pi/README.md)**
 
 ---

@@ -43,16 +43,5 @@ This tutorial builds on the [Azure IoT Python SDK 2](https://github.com/Azure/az
 * Module 2: [Set up your Raspberry Pi](./zdocs/module_2_set_up_raspberry_pi/README.md)
 * Module 3: [Set up your development environment](./zdocs/module_3_set_up_computer/README.md)
 * Module 4: [Run the solution](./zdocs/module_4_building_the_solution/README.md)
+* Module 5: [Dockerize the Air Quality Monitor solution](./zdocs/module_5_docker/README.md)
 
-
-
-
-```text
-SCOPE_ID={IoT Central ID Scope}
-DEVICE_ID={your device id}
-DEVICE_KEY={your device key}
-````
-
-## References
-
-[Tutorial: Create and connect a client application to your Azure IoT Central application (Python)](https://docs.microsoft.com/en-us/azure/iot-central/core/tutorial-connect-device-python?WT.mc_id=julyot-aqm-dglover)

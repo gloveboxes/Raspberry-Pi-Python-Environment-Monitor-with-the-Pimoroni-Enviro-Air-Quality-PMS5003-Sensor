@@ -1,4 +1,4 @@
-# Module 5: Build and deploy the solution
+# Module 4: Build and deploy the solution
 
 ---
 
@@ -8,7 +8,7 @@
 * Module 2: [Set up your Raspberry Pi](../module_2_set_up_raspberry_pi/README.md)
 * Module 3: [Set up your development environment](../module_3_set_up_computer/README.md)
 * Module 4: [Run the solution](../module_4_building_the_solution/README.md)
-
+* Module 5: [Dockerize the Air Quality Monitor solution](../module_5_docker/README.md)
 * [Home](../../README.md)
 
 ---
@@ -16,7 +16,7 @@
 ## Explore the solution
 
 1. Expand the **app** folder.
-2. Double click **main.py**, this is the the main python application reads the sensor and sends the telemetry to Azure IoT Central.
+2. Double click **main.py**, this is the main python application reads the sensor and sends the telemetry to Azure IoT Central.
 
 ![](../resources/vs-code-explore-solution.png)
 
@@ -39,19 +39,26 @@
 
 1. Select the **Run** configuration. From the Visual Studio Code main menu, click **View**, then **Run**.
 2. From the **Run** drop down menu, select **Python: Current File**
+
     ![](../resources/vs-code-run-select.png)
+
 3. Press <kbd>F5</kbd> to start running and debugging the application on the Raspberry Pi.
 4. Monitor the Visual Studio terminal window as the application starts. The application prints the telemetry as a JSON string in the Terminal window and then sends the telemetry to IoT Central.
     ![](../resources/vs-code-display-output.png)
-5. Press <kbd>Shift+F5</kbd> to stop the stop the application.
+5. View the telemetry in Azure IoT Central
 
-## Using the debugger
+    * Switch back to IoT Central in the browser, and ensure you have select your device.
+
+        ![](../resources/iot-central-telemetry-show.png)
+
+6. Press <kbd>Shift+F5</kbd> to stop the application.
+
+## Learning about the debugger
 
 Check out the [Debug your Python code](https://docs.microsoft.com/en-us/visualstudio/python/debugging-python-in-visual-studio?view=vs-2019) article to learn more about debugging Python applications with Visual Studio Code.
 
-
 ---
 
-**[Home](../../README.md)**
+**[NEXT](../module_5_docker/README.md)**
 
 ---
