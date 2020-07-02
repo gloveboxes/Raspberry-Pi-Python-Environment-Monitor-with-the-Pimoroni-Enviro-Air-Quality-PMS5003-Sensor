@@ -11,7 +11,7 @@
 
 ---
 
-There are several reasons that you might want to dockerize your application. Including deploying to other devices, recovery, and deploying as part of an [Azure IoT Edge](https://docs.microsoft.com/en-us/azure/iot-edge/) solution.  For now, we are just going to learn how to dockerize the application.
+There are several reasons that you might want to dockerize your application. Including deploying to other devices, recovery, and deploying as part of an [Azure IoT Edge](https://docs.microsoft.com/en-us/azure/iot-edge/?WT.mc_id=julyot-aqm-dglover) solution.  For now, we are just going to learn how to dockerize the application.
 
 ## Exploring the Docker configuration
 
@@ -71,6 +71,6 @@ Some times it can be very handy to attach the debugger to a misbehaving applicat
     ![](../resources/vs-code-breakpoint-set.png)
 5. Now step through the code using the **Debugger Toolbar**, or press <kbd>F5</kbd> to continue, <kbd>F10</kbd> to over, <kbd>F11</kbd> to step into, <kbd>Shift+F11</kbd> to step out, and <kbd>Shift+F5</kbd> to disconnect the debugger from the container.
 
-    Check out the [Debug your Python code](https://docs.microsoft.com/en-us/visualstudio/python/debugging-python-in-visual-studio?view=vs-2019) article to learn more about debugging Python applications with Visual Studio Code.
+    Check out the [Debug your Python code](https://docs.microsoft.com/en-us/visualstudio/python/debugging-python-in-visual-studio?view=vs-2019&WT.mc_id=julyot-aqm-dglover) article to learn more about debugging Python applications with Visual Studio Code.
 
 [Home](../../README.md)

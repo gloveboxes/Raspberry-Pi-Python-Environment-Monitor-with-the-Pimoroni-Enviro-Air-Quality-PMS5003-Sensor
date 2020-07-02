@@ -15,7 +15,7 @@
 
 ## Introduction to Azure IoT Central
 
-[Azure IoT Central](https://azure.microsoft.com/en-in/services/iot-central/?WT.mc_id=julyot-azd-dglover) provides an easy way to connect, monitor, and manage your Internet of Things (IoT) assets at scale.
+[Azure IoT Central](https://azure.microsoft.com/en-in/services/iot-central/?WT.mc_id=julyot-aqm-dglover) provides an easy way to connect, monitor, and manage your Internet of Things (IoT) assets at scale.
 
 This lab will be using Azure IoT Central to graph air quality levels and set alerts. We are going to create an Azure IoT Central application and then one device.
 
@@ -39,7 +39,7 @@ Before you get started creating the Azure IoT Central app you need to download t
 
 ## Create a New IoT Central Application
 
-1. So the lab instructions are still visible, right mouse click, and open this link "[Azure IoT Central](https://azure.microsoft.com/en-au/services/iot-central/?WT.mc_id=pycon-blog-dglover)" in a new window.
+1. So the lab instructions are still visible, right mouse click, and open this link "[Azure IoT Central](https://azure.microsoft.com/en-au/services/iot-central/?WT.mc_id=julyot-aqm-dglover)" in a new window.
 
 2. Click **Build a solution**.
 
@@ -69,7 +69,7 @@ Before you get started creating the Azure IoT Central app you need to download t
 
 A device template is a blueprint that defines the characteristics and behaviors of a type of device that connects to an Azure IoT Central application.
 
-For more information on device templates, review the [Define a new IoT device type in your Azure IoT Central application](https://docs.microsoft.com/en-us/azure/iot-central/core/howto-set-up-template?WT.mc_id=github-blog-dglover) article. 
+For more information on device templates, review the [Define a new IoT device type in your Azure IoT Central application](https://docs.microsoft.com/en-us/azure/iot-central/core/howto-set-up-template?WT.mc_id=julyot-aqm-dglover) article. 
 
 1. Click **Device templates**, then **+ New**.
     ![](../resources/iot-central-template-new.png)

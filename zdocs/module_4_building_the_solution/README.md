@@ -55,7 +55,7 @@
 
 ## Learning about the debugger
 
-Check out the [Debug your Python code](https://docs.microsoft.com/en-us/visualstudio/python/debugging-python-in-visual-studio?view=vs-2019) article to learn more about debugging Python applications with Visual Studio Code.
+Check out the [Debug your Python code](https://docs.microsoft.com/en-us/visualstudio/python/debugging-python-in-visual-studio?view=vs-2019&WT.mc_id=julyot-aqm-dglover) article to learn more about debugging Python applications with Visual Studio Code.
 
 ---
 

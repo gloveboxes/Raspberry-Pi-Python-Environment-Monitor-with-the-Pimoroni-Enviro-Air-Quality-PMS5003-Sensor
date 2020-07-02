@@ -55,7 +55,7 @@ The SSH utility guides you through the process of setting up a secure SSH channe
 
 Visual Studio Code is a code editor and is one of the most popular **Open Source** projects on [GitHub](https://github.com/microsoft/vscode). It runs on Linux, macOS, and Windows.
 
-1. Install Visual Studio Code from [here](https://code.visualstudio.com/?WT.mc_id=julyot-tir-dglover).
+1. Install Visual Studio Code from [here](https://code.visualstudio.com/?WT.mc_id=julyot-aqm-dglover).
 
 ---
 
@@ -84,8 +84,8 @@ Visual Studio Code is a code editor and is one of the most popular **Open Source
 
 The following Visual Studio Code Extensions are required.
 
-[Python extension for Visual Studio Code](https://marketplace.visualstudio.com/items?itemName=ms-python.python&WT.mc_id=julyot-tir-dglover)
-[Docker for Visual Studio Code](https://marketplace.visualstudio.com/items?itemName=ms-azuretools.vscode-docker&WT.mc_id=julyot-tir-dglover)
+[Python extension for Visual Studio Code](https://marketplace.visualstudio.com/items?itemName=ms-python.python&WT.mc_id=julyot-aqm-dglover)
+[Docker for Visual Studio Code](https://marketplace.visualstudio.com/items?itemName=ms-azuretools.vscode-docker&WT.mc_id=julyot-aqm-dglover)
 
 To install the required Visual Studio Code Extensions, follow these instructions:
 
