@@ -35,9 +35,7 @@ This lab depends on Visual Studio Code and Remote SSH development. Remote SSH de
 
 ---
 
-## Acknowledgements
-
-This tutorial builds on the [Azure IoT Python SDK 2](https://github.com/Azure/azure-iot-sdk-python/tree/master/azure-iot-device/samples) samples.
+## Let's get started
 
 * Module 1: [Create an Azure IoT Central application](./zdocs/module_1_create_iot_hub/README.md)
 * Module 2: [Set up your Raspberry Pi](./zdocs/module_2_set_up_raspberry_pi/README.md)
@@ -45,3 +43,6 @@ This tutorial builds on the [Azure IoT Python SDK 2](https://github.com/Azure/az
 * Module 4: [Run the solution](./zdocs/module_4_building_the_solution/README.md)
 * Module 5: [Dockerize the Air Quality Monitor solution](./zdocs/module_5_docker/README.md)
 
+## Acknowledgements
+
+This tutorial builds on the [Azure IoT Python SDK 2](https://github.com/Azure/azure-iot-sdk-python/tree/master/azure-iot-device/samples) samples.
