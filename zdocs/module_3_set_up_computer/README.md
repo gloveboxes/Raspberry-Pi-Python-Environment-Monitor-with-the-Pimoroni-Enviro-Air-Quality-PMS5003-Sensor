@@ -21,8 +21,8 @@ Setting up a public/private key pair for [SSH](https://en.wikipedia.org/wiki/Sec
 
 The Raspberry Pi SSH Authentication utility will prompt you for:
 
-- The Raspberry Pi Network IP Address. Run ```hostname -I | cut -d" " -f 1``` on your Raspberry Pi to display its IP address.
-- The Raspberry Pi login name and password. The Raspberry Pi **default** login name is **pi**, and the default password is **raspberry**.
+* The Raspberry Pi Network IP Address. Run ```hostname -I | cut -d" " -f 1``` on your Raspberry Pi to display its IP address.
+* The Raspberry Pi login name and password. The Raspberry Pi **default** login name is **pi**, and the default password is **raspberry**.
 
 ### Set up SSH for Windows Users
 

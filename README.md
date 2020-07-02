@@ -6,11 +6,11 @@ Born of necessity, this project tracks the air quality over Sydney during the he
 
 | Sydney, Dec 2019 | Particulate matter readings|
 | ---- | ---|
-| ![](resources/sydney-height-of-bush-fires.jpg) | Readings for PM 2.5 and PM 10 approx 1000. Healthy levels should be between 0 ~ 10. ![](resources/pm-readings-dec-10-2019.png) |
+| ![](./zdocs/resources/sydney-height-of-bush-fires.jpg) | Readings for PM 2.5 and PM 10 approx 1000. Healthy levels should be between 0 ~ 10. ![](./zdocs/resources/pm-readings-dec-10-2019.png) |
 
 This is Sydney on a clear day, the photo was taken in May 2020, alas, during the COVID-19 pandemic lock down. On the upside, there is close to zero air pollution.
 
-![](resources/sydney-height-of-pandemic.jpg)
+![](./zdocs/resources/sydney-height-of-pandemic.jpg)
 
 
 ---
@@ -31,7 +31,7 @@ This lab depends on Visual Studio Code and Remote SSH development. Remote SSH de
 
 ## Solution Architecture
 
-![](resources/azure-iot-central-air-quality-monitor.png)
+![](./zdocs/resources/azure-iot-central-air-quality-monitor.png)
 
 ---
 
