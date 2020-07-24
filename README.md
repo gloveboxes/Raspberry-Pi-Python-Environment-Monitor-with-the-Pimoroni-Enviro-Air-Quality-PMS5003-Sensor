@@ -1,4 +1,4 @@
-# Raspberry Pi Air Pollution Monitor during the Australian bushfires
+# Monitor Air Pollution with a Raspberry Pi, a Particulate Matter sensor and IoT Central
 
 ## Background
 
