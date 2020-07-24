@@ -1,4 +1,4 @@
-# Tutorial: Azure IoT Central and Particulate Matter Monitoring  
+# Raspberry Pi Air Pollution Monitor during the Australian bushfires
 
 ## Background
 
@@ -12,6 +12,11 @@ This is Sydney on a clear day, the photo was taken in May 2020, alas, during the
 
 ![](./zdocs/resources/sydney-height-of-pandemic.jpg)
 
+---
+
+## #JulyOT
+
+This is part of the #JulyOT [IoT Tech Community](http://aka.ms/julyot) series, a collection of blog posts, hands-on-labs, and videos designed to demonstrate and teach developers how to build projects with Azure Internet of Things (IoT) services. Please also follow [#JulyOT](https://twitter.com/hashtag/JulyOT) on Twitter.
 
 ---
 
@@ -46,3 +51,7 @@ This lab depends on Visual Studio Code and Remote SSH development. Remote SSH de
 ## Acknowledgements
 
 This tutorial builds on the [Azure IoT Python SDK 2](https://github.com/Azure/azure-iot-sdk-python/tree/master/azure-iot-device/samples) samples.
+
+---
+
+Have fun and stay safe and be sure to follow us on [#JulyOT](https://twitter.com/hashtag/JulyOT?src=hash&ref_src=twsrc%5Etfw).
